@@ -2,11 +2,6 @@
 
 A sophisticated **frontend-only** web application built with **React** and **TypeScript**. This interactive prototype functions as an **AI-powered interview coach**. While designed with a fully local architecture in mind, it currently uses the **Google Gemini API** for AI features as a proof of concept.
 
-## 🌟 Core Architecture
-- **Single-Page Application (SPA):** Entirely runs in your browser. No backend server required.
-- **Local-First Data Storage:** Uses a mock service (`supabaseService.ts`) simulating a database via Local Storage. All data (profiles, past interviews) stays on your computer for **privacy** and **offline functionality**.
-- **Component-Based UI:** Built with reusable **React components** and styled using **Tailwind CSS**. Features a **modern, responsive, dark-themed** design with **yellow, purple, and cyan accents**.
-
 ## ✨ Key Features
 - 🔐 **Mock User Authentication:** Sign up and log in. User info securely stored in Local Storage. Authenticated users can access protected pages like:
   - Progress Tracker
@@ -14,9 +9,9 @@ A sophisticated **frontend-only** web application built with **React** and **Typ
   - Settings
 - 🧭 **End-to-End Interview Flow:**
   1. **Domain Selection:** Choose a professional domain (e.g., Tech, Business) and role (e.g., Frontend Developer, Product Manager).
-  2. **Dynamic Question Generation:** Uses Gemini API to generate **10 high-quality interview questions**.
+  2. **Dynamic Question Generation:** Uses a local LLM to generate **10 dynamically generated interview questions**.
   3. **Interactive Session:** Questions are presented one by one, with **Text-to-Speech** reading them aloud.
-  4. **AI-Powered Analysis:** Submits answers to Gemini for detailed performance analysis.
+  4. **AI-Powered Analysis:** Submits answers to a local LLM for detailed performance analysis.
   5. **Comprehensive Reporting:** Detailed feedback includes:
      - Overall performance summary
      - Numerical scores (fluency, tone, grammar, etc.)
