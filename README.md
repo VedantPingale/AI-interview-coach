@@ -1,42 +1,20 @@
-# AI Interview Coach (Frontend-Only Prototype)
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-A sophisticated **frontend-only** web application built with **React** and **TypeScript**. This interactive prototype functions as an **AI-powered interview coach**. While designed with a fully local architecture in mind, it currently uses the **Google Gemini API** for AI features as a proof of concept.
+# Run and deploy your AI Studio app
 
-## ✨ Key Features
-- 🔐 **Mock User Authentication:** Sign up and log in. User info securely stored in Local Storage. Authenticated users can access protected pages like:
-  - Progress Tracker
-  - Profile
-  - Settings
-- 🧭 **End-to-End Interview Flow:**
-  1. **Domain Selection:** Choose a professional domain (e.g., Tech, Business) and role (e.g., Frontend Developer, Product Manager).
-  2. **Dynamic Question Generation:** Uses a local LLM to generate **10 dynamically generated interview questions**.
-  3. **Interactive Session:** Questions are presented one by one, with **Text-to-Speech** reading them aloud.
-  4. **AI-Powered Analysis:** Submits answers to a local LLM for detailed performance analysis.
-  5. **Comprehensive Reporting:** Detailed feedback includes:
-     - Overall performance summary
-     - Numerical scores (fluency, tone, grammar, etc.)
-     - Full review of all Q&A
-- 📈 **Progress Tracking:** Saves completed sessions for logged-in users. The **Progress Tracker** page visualizes improvement over time using **Recharts**.
+This contains everything you need to run your app locally.
 
-## 🛠 Technology Stack
-- **Frontend Framework:** React 19 with TypeScript
-- **Styling:** Tailwind CSS
-- **Routing:** React Router
-- **AI Service:** Google Gemini API (`@google/genai`)
-- **Data Visualization:** Recharts
-- **State Management:** React Context API & Custom Hooks (`useAuth`, `useTextToSpeech`)
+View your app in AI Studio: https://ai.studio/apps/drive/1pv4MDEg6kCJkfVaknNI3laol_rRMPDZe
 
-## 🚀 Project Vision
-This app is currently a **fully functional demonstration**. The long-term goal is to **replace the Gemini API** with a **local AI framework** like [OLLAMA](https://ollama.com), enabling:
-- 100% privacy
-- Offline capability
-- Completely free AI processing on the user's machine
+## Run Locally
 
-## 🧑‍💻 Run Locally
-### Prerequisites
-- [Node.js](https://nodejs.org/) installed
+**Prerequisites:**  Node.js
 
-### Steps
-1. **Install dependencies:**
-   ```bash
-   npm install
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
