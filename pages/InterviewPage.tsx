@@ -4,7 +4,7 @@ import DomainSelector from '../components/interview/DomainSelector';
 import InterviewSession from '../components/interview/InterviewSession';
 import AnalysisReport from '../components/interview/AnalysisReport';
 import Spinner from '../components/ui/Spinner';
-import { generateInterviewQuestions, analyzeInterviewAnswers } from '../services/geminiService';
+import { generateInterviewQuestions, analyzeInterviewAnswers } from '../services/aiService';
 import type { Answer, AnalysisReportData } from '../types';
 import { supabase } from '../services/supabaseService';
 import { useAuth } from '../hooks/useAuth';

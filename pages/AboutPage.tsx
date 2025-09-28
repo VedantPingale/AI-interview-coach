@@ -8,7 +8,7 @@ const AboutPage: React.FC = () => {
         About AI Interview Coach
       </h1>
       <p className="text-lg text-center mb-16">
-        This application is a demonstration of a powerful, locally-run AI interview coaching platform. It's designed to help users practice for interviews without concerns about privacy or ongoing costs, by leveraging local AI models for all core functionalities.
+        This application is a powerful, locally-run AI interview coaching platform. It's designed to help users practice for interviews without concerns about privacy or ongoing costs, by leveraging local AI models for all core functionalities.
       </p>
 
       <div className="mb-16">
@@ -51,7 +51,7 @@ const AboutPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-yellow-400 mb-3"><i className="fas fa-cogs mr-2"></i> Technology Stack</h2>
           <ul className="text-gray-400 list-disc list-inside space-y-2">
             <li><strong>Frontend:</strong> React & TypeScript with Tailwind CSS</li>
-            <li><strong>AI Models:</strong> Google Gemini API (for this demo)</li>
+            <li><strong>AI Models:</strong> Ollama with local models (e.g., Llama 3)</li>
             <li><strong>Charts:</strong> Recharts</li>
             <li><strong>State Management:</strong> React Context & Hooks</li>
             <li><strong>Icons:</strong> Font Awesome</li>
@@ -60,9 +60,9 @@ const AboutPage: React.FC = () => {
       </div>
       
       <Card>
-          <h2 className="text-2xl font-bold text-yellow-400 mb-3"><i className="fas fa-rocket mr-2"></i> Vision for the Future</h2>
+          <h2 className="text-2xl font-bold text-yellow-400 mb-3"><i className="fas fa-shield-alt mr-2"></i> Private & Local First</h2>
           <p className="text-gray-400">
-            Our ultimate goal is to make this tool 100% local and private. The current version uses the Gemini API for demonstration purposes, but the next major step is to integrate local, quantized LLMs (like OLLAMA models) for question generation and analysis. This will ensure that your data never leaves your computer, providing complete privacy and offline functionality at zero cost.
+            This tool is built on the principle of privacy. By integrating with local AI models via Ollama, we ensure that your interview data never leaves your computer. This provides complete privacy, offline functionality, and zero ongoing costs. You are in full control.
           </p>
         </Card>
 
